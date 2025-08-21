@@ -1,0 +1,25 @@
+# Compiled JavaScript and Source Maps
+/dist/
+/build/
+*.js
+*.js.map
+
+# Node Modules
+/node_modules/
+
+# Logs and Temporary Files
+/logs/
+*.log
+.DS_Store
+.env
+.env.*
+.tmp/
+
+# IDE and Editor Specific Files (examples)
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# OS Generated Files
+Thumbs.db
