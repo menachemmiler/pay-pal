@@ -1,11 +1,18 @@
 import PayPalCheckout from "./components/PayPalCheckout";
+import { type FC } from "react";
+import Home from "./components/Home";
+import { Route, Routes } from "react-router";
+import { PaymentProvider } from "./context/PaymentContext";
 
-function App() {
+const App: FC = () => {
   return (
-    <>
-      <PayPalCheckout />
-    </>
+    <PaymentProvider>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/payment" element={<PayPalCheckout />} />
+      </Routes>
+    </PaymentProvider>
   );
-}
+};
 
 export default App;
