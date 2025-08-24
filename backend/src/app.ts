@@ -36,9 +36,9 @@ app.post("/create-order", async (req, res) => {
     ],
     application_context: {
       user_action: "PAY_NOW",
-      cancel_url: "https://example.com/paypal/cancel",
-      locale: "en-US", // נסה במקום he_IL
-      shipping_preference: "NO_SHIPPING", // אם זה דיגיטלי
+      // cancel_url: "https://example.com/paypal/cancel",
+      // locale: "en-US", // נסה במקום he_IL
+      // shipping_preference: "NO_SHIPPING", // אם זה דיגיטלי
     },
   });
 
